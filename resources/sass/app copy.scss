@@ -1,0 +1,2047 @@
+                                                                                        @import '~bootstrap/scss/bootstrap';
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/solid.scss";
+@import "./fontawesome/brands.scss";
+ :root {
+    --first-color: #000;
+    --second-color: #000;
+    --tierd-color: #CB954B;
+    --fourthColor: #707070;
+}
+
+@font-face {
+    font-family: "Nelphim";
+    src: url("/fonts/Nelphim-Regular-400.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Nelphim";
+    src: url("/fonts/NelphimItalic-Italic-400.otf");
+    font-weight: 400;
+    font-style: italic
+}
+
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Roboto');
+//@import url('https://fonts.googleapis.com/css?family=Lato');
+// Variables
+//@import 'variables';
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: Lato, Roboto, sans-serif
+}
+
+
+/* Start Scroll Bar */
+
+
+/* width */
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    //box-shadow: inset 0 0 5px grey;
+    //border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #000;
+    //border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    //background: var(--tierd-color);
+}
+
+
+/* End Scroll Bar */
+
+
+/* Start Navbar */
+
+.navbar {
+    // background-color: #FFF;
+    @media(min-width: 991px) {
+        // background-color: var(--first-color);
+    }
+    .navbar-brand {
+        img {
+            width: 100px;
+        }
+    }
+    // Cart
+    .cart-wrapper {
+        .cart {
+            width: 19px;
+            height: 15px;
+            @media(min-width: 1200px) {
+                width: 25px;
+                height: 21px;
+            }
+        }
+        .number {
+            font: normal normal 300 12px/40px Lato;
+            letter-spacing: 0.4px;
+            color: #000;
+            @media(min-width: 1200px) {
+                font-size: 19px;
+            }
+        }
+    }
+    // Navbar Ul
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                font: normal normal normal 17px/20px Nelphim;
+                letter-spacing: 1.7px;
+                color: #000;
+                @media(min-width: 1000px) {
+                    // color: #FFF;
+                    // font-size: 15px;
+                }
+            }
+            &.contact-us {
+                a {
+                    font-weight: normal;
+                    font-style: italic;
+                    font-size: 15px;
+                    letter-spacing: 0.38px;
+                }
+            }
+        }
+    }
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--tierd-color);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: #807e7e;
+    font-size: 25px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--tierd-color);
+}
+
+
+/* End Navbar */
+
+
+/* Start  Carousal */
+
+@import "./scss/carousel.scss";
+
+/* End  Carousal */
+
+
+/* Start why-dalida */
+
+@import "./scss/why-dalida.scss";
+
+/* End why-dalida */
+
+
+/* Start Best Sellers */
+
+@import "./scss/why-dalida.scss";
+
+/* End Best Sellers */
+
+
+/* Start Guarantee */
+
+@import "./scss/why-dalida.scss";
+.guarantee {
+    background-image: url("/images/footer-green-bg-bottom.svg");
+    background-position-x: 52rem;
+    background-size: cover;
+    padding-bottom: 12rem;
+    @include media-breakpoint-up(lg) {
+        background-position-x: -2rem;
+    }
+    h1 {
+        width: 60%;
+        font-weight: 300;
+    }
+    .term {
+        .policy {
+            &:after {
+                content: "";
+                width: 19;
+                1px;
+                ption: absolute;
+                bom: 0;
+                left%;
+                m: translateX(-50%);
+                backnd-color: #FFF;
+                z-index: 1;
+                @includia-breakpoint-up(md) {
+                    display: none;
+                    hei0;
+                }
+                {
+                    width: 58px;
+                    height: 59px;
+                    @include media-breakpoint-up(md) {
+                        width: 83px;
+                    }
+                }
+                s {
+                    f: normal normal 300 12px/16px Lato;
+                    er-spacing: 0;
+                    r: #FFFFFF;
+                    lude media-breakpoint-up(lg) {
+                        font-size: 17px;
+                        line-height: 20px;
+                        ht: 30px;
+                    }
+                }
+                p {
+                    : normal normal 300 12px/14px Lato;
+                    letter-spacing: 0;
+                    r: #000000;
+                    @include media-breakpoint-up(lg) {
+                        h: 65%;
+                        font-size: 15px;
+                        -height: 20px;
+                    }
+                }
+            }
+        }
+        d Guarantee */ tart Gammes */ .gammes {
+            .wrapper {
+                h1.title {
+                    color: -fourthcolor);
+                    margin-bottom: 3rem;
+                    fonrmal normal normal 28px/100px Nelphim;
+                    letter-spacing: 2.27px;
+                    color: 00;
+                    @include media-breakpoint-up(lg) {
+                        -size: 70px;
+                        letter-spacing: 5.6px;
+                        line-height: 100px;
+                        margin-bottom: 6rem;
+                        &:befor,
+                        &:after {
+                            content: "";
+                            height: 1px;
+                            background-color: #d8d7d7;
+                            width: 47px;
+                            ption: absolute;
+                            @include media-breakpoint-up(md) {
+                                widt0%;
+                                @inc media-breakpoint-up(lg) {
+                                    width: 35%;
+                                }
+                                media-breakpoint-up(xl) {
+                                    width: 30%;
+                                }
+                            }
+                            &:before l bottom: 50%;
+                            &:after {
+                                t: 0;
+                                bottom: 50%;
+                            }
+                        }
+                        >p {
+                            font: rmal normal 300 19px/15px Lato;
+                            letter-spacing: 0px;
+                            color: #00000 paddom: 74px;
+                        }
+                    }
+                    .all-gammes> :nth-chil) {
+                        .left {
+                            @in media-breakpoint-up(lg) {
+                                order: 2;
+                            }
+                            h4 {
+                                right: 0 !important;
+                                left: -97% !important
+                            }
+                            .products-rotate-text {
+                                @inlude media-breakpoint-up(lg) {
+                                    order: 1;
+                                }
+                            }
+                            > :n(even) {
+                                .left @include media-breakpoint-up(lg) {
+                                    order: 1;
+                                }
+                            }
+                            s-rotate-text {
+                                @inc media-breakpoint-up(lg) {
+                                    order: 2;
+                                }
+                            }
+                            >d .image {
+                                width: 100%;
+                                background-size: cover;
+                                background-position: center;
+                            }
+                            > :nth-child(1) {
+                                .image background-image: url("/images/gamme-mask-1.png");
+                            }
+                            .products {
+                                backgnd-image: url("/images/gamme-mask-1.png") !important;
+                            }
+                        }
+                        > :nth-child(2) {
+                            .image {
+                                backmage: url("/images/gamme-mask-2.png");
+                            }
+                            .products {
+                                backgromage: url("/images/gamme-mask-2.png") !important;
+                            }
+                        }
+                        > :nth-child(3) {
+                            .image {
+                                backmage: url("/images/gamme-mask-3.png");
+                            }
+                            .products {
+                                backmage: url("/images/gamme-mask-3.png") !important;
+                            }
+                        }
+                        amme {
+                            h1 {
+                                font: normal normanormal 20px/16px Lato;
+                                color: var(-olor)
+                            }
+                            .image-produ .left {
+                                /g {
+                                    object-fit: cover;
+                                    nclude media-breakpoint-up(lg) {
+                                        //     ight: 971px;
+                                        //
+                                        //}
+                                        .image {
+                                            obit: cover;
+                                            100%;
+                                            @inclia-breakpoint-up(lg) {
+                                                ight: 959px;
+                                            }
+                                            h4 {
+                                                text-align: center;
+                                                rmal normal normal 25px/31px Nelphim;
+                                                letter-pacing: 1.25px;
+                                                color: #000;
+                                                right: 0;
+                                                widt100% - 26px);
+                                                margiauto;
+                                                @include media-breakpoint-up(lg) {
+                                                    font-size: 53px;
+                                                    ght: 66px;
+                                                    letter-sng: 2.65px;
+                                                    width: 27%;
+                                                    right: -x;
+                                                    top: 33%;
+                                                    transfrranslateY(-50%);
+                                                }
+                                            }
+                                        }
+                                        .products-rotate-t>h4.rotate-text {
+                                            m: rotate(-90deg);
+                                            top: 50%;
+                                            left font: normal normal normal 25px/31px Nelphim;
+                                            letter-s1.25px;
+                                            &.rotate {
+                                                transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+                                            }
+                                        }
+                                        .products {
+                                            backgrou: url("/images/gamme-mask-1.png");
+                                            // opacity: 0.
+                                            backgrouion: center;
+                                            backgrounize: cover;
+                                            @include media-breakpoint-up(lg) {
+                                                ground: none !important;
+                                                opacity: 1;
+                                            }
+                                            > :nth-child(1) {
+                                                // r-right: 1px solid #a19e9e;
+                                                &::after {
+                                                    co "";
+                                                    0px;
+                                                    wi00%;
+                                                    posisolute;
+                                                    left: //transfrom: translateX(-50%);
+                                                    om: 0;
+                                                    background: #a19e9e;
+                                                    1;
+                                                }
+                                            }
+                                            > :nth-child(4 {
+                                                // border-left: 1px solid #a19e9e;
+                                                &::after {
+                                                    cont height: 0 00%;
+                                                    ption: absolute;
+                                                    right: 0;
+                                                    //trrom: translateX(-50%);
+                                                    0;
+                                                    ground: #a19e9e;
+                                                    z-index: 1;
+                                                }
+                                            }
+                                            .produ position: relative;
+                                            paddi 10px;
+                                            paddom: 10px;
+                                            >img object-fit: contain;
+                                            128px;
+                                            width: 100px;
+                                            @incia-breakpoint-up(lg) {}
+                                            widt h: 169px;
+                                        }
+                                        height: 277px;
+                                    }
+                                }
+                            }
+                        }
+                        /* End Gammes */
+                        /* Start Instagram Feeds */
+                        .instagram-feeds {
+                            .follow-us {
+                                left: 50%;
+                                top: 23%;
+                                transform: translateX(-50%);
+                                width: 64%;
+                                >h4 {
+                                    .box {
+                                        background-color: #000; //font: normal normal medium 6px/8px Lato;
+                                        img {
+                                            font-weight: normal;
+                                            font-size: 9px;
+                                            >a {
+                                                font: normal normal 300 9px/12px Roboto;
+                                                line-height: 8px;
+                                                letter-spacing: 0.19px;
+                                                color: #000000;
+                                                background-color: #FFF;
+                                                @include media-breakpoint-up(lg) {
+                                                    font-size: 13px;
+                                                    line-height: 14px;
+                                                }
+                                            }
+                                        }
+                                        . font-size: 16px;
+                                         :nth-child(n+7) {
+                                            display: none;
+                                            @include media-breakpoint-up(lg) line-height: 15px;
+                                            display: f x;
+                                        }
+                                    }
+                                    . eed {
+                                        >img {
+                                            wid h 10
+                                        }
+                                        heigh 100px
+                                    }
+                                    object-fit: contain;
+                                    @include media-breakpoint-up(lg) {
+                                        height: 217px img {}
+                                        //object-fit: contain;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                /* End Instagram Feeds */
+                /* Start Product */
+                .breadcrumb-nav {
+                    .breadcrumb {
+                        .breadcrumb-item {
+                            a {
+                                font-weight: 300;
+                                font-size: 15px;
+                                letter-spacing: 0.32px;
+                                color: var(--fourthColor);
+                                text-decoration: none;
+                                @include media-breakpoint-up(lg) {
+                                    font-size: 15px;
+                                    letter-spacing: 0.32px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .product-page {
+                    .product {
+                        .left {
+                            .product-image {
+                                border: 0.5px solid var(--fourthColor);
+                                @include media-breakpoint-up(lg) {
+                                    border: 0;
+                                }
+                                img {
+                                    width: 112px;
+                                    height: 331px;
+                                    object-fit: contain;
+                                    @include media-breakpoint-up(lg) {
+                                        width: 210px;
+                                        height: 600px;
+                                    }
+                                    &.category {
+                                        @include media-breakpoint-up(lg) {
+                                            width: 600px;
+                                            height: 700px;
+                                        }
+                                    }
+                                }
+                            }
+                            .catalog {
+                                .image-product-shape {
+                                    img {
+                                        width: 50px;
+                                        height: 50px;
+                                        object-fit: contain;
+                                        @include media-breakpoint-up(lg) {
+                                            width: 122px;
+                                            height: 122px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right {
+                            h1.head {
+                                font-style: normal;
+                                font-variant: normal;
+                                font-weight: 400;
+                                font-size: 19px;
+                                line-height: 13px;
+                                letter-spacing: 1.43px;
+                                color: var(--tierd-color);
+                                @include media-breakpoint-up(md) {
+                                    font-size: 30px;
+                                }
+                                @include media-breakpoint-up(lg) {
+                                    font-size: 33px;
+                                    line-height: 28px;
+                                    letter-spacing: 2.48px;
+                                    width: 90%;
+                                }
+                            }
+                            h3.type {
+                                font-style: normal;
+                                font-variant: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 13px;
+                                letter-spacing: 3.84px;
+                                color: #161615;
+                                @include media-breakpoint-up(lg) {
+                                    font-size: 22px;
+                                    line-height: 23px;
+                                    letter-spacing: 3px;
+                                }
+                            }
+                            .price {
+                                font-weight: bold;
+                                font-size: 11px;
+                                line-height: 14px;
+                                letter-spacing: 0.23px;
+                                @include media-breakpoint-up(lg) {
+                                    font-size: 20px;
+                                    line-height: 25px;
+                                    letter-spacing: 0.42px;
+                                }
+                                .new {
+                                    color: var(--tierd-color)
+                                }
+                                .correct {
+                                    a {
+                                        font-weight: 300;
+                                        font-size: 15px;
+                                        letter-spacing: 0.32px;
+                                        color: var(--fourthColor);
+                                        text-decoration: none .feeds {
+                                             :nth-child(n+7) {
+                                                display: none;
+                                                @include media-breakpoint-up(lg) {
+                                                    display: flex;
+                                                }
+                                            }
+                                            .product-page {
+                                                .product {
+                                                    .left {
+                                                        .product-image {
+                                                            border: 0.5px solid var(--fourthColor);
+                                                            @include media-breakpoint-up(lg) {
+                                                                border: 0;
+                                                            }
+                                                            img {
+                                                                width: 112px;
+                                                                height: 331px;
+                                                                object-fit: contain;
+                                                                @include media-breakpoint-up(lg) {
+                                                                    width: 210px;
+                                                                    height: 600px;
+                                                                }
+                                                                &.category {
+                                                                    @include media-breakpoint-up(lg) {
+                                                                        width: 600px;
+                                                                        height: 700px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        .catalog {
+                                                            .image-product-shape {
+                                                                img {
+                                                                    width: 50px;
+                                                                    height: 50px;
+                                                                    object-fit: contain;
+                                                                    @include media-breakpoint-up(lg) {
+                                                                        width: 122px;
+                                                                        height: 122px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .right {
+                                                        h1.head {
+                                                            font-style: normal;
+                                                            font-variant: normal;
+                                                            font-weight: 400;
+                                                            font-size: 19px;
+                                                            line-height: 13px;
+                                                            letter-spacing: 1.43px;
+                                                            color: var(--tierd-color);
+                                                            @include media-breakpoint-up(md) {
+                                                                font-size: 30px;
+                                                            }
+                                                            @include media-breakpoint-up(lg) {
+                                                                font-size: 33px;
+                                                                line-height: 28px;
+                                                                letter-spacing: 2.48px;
+                                                                width: 90%;
+                                                            }
+                                                        }
+                                                        h3.type {
+                                                            font-style: normal;
+                                                            font-variant: normal;
+                                                            font-weight: 400;
+                                                            font-size: 12px;
+                                                            line-height: 13px;
+                                                            letter-spacing: 3.84px;
+                                                            color: #161615;
+                                                            @include media-breakpoint-up(lg) {
+                                                                font-size: 22px;
+                                                                line-height: 23px;
+                                                                letter-spacing: 3px;
+                                                            }
+                                                        }
+                                                        .price {
+                                                            font-weight: bold;
+                                                            font-size: 11px;
+                                                            line-height: 14px;
+                                                            letter-spacing: 0.23 font-size: 19px;
+                                                            line-height: 13px;
+                                                            letter-spacing: 1.43px;
+                                                            45 color: var(--tierd-color);
+                                                            @include media-breakpoint-up(md) {
+                                                                .new {
+                                                                    color: var(--tierd-color)
+                                                                }
+                                                                .correct {
+                                                                    color: var(--fourthColor);
+                                                                }
+                                                            }
+                                                            .stock {
+                                                                font-weight: bold;
+                                                                font-size: 10px;
+                                                                line-height: 15px;
+                                                                letter-spacing: 0.21px;
+                                                                .in {
+                                                                    .in {
+                                                                        color: var(--tierd-color);
+                                                                        @include media-breakpoint-up(lg) {
+                                                                            font-size: 17px;
+                                                                            line-height: 42px;
+                                                                            letter-spacing: 0.36px;
+                                                                        }
+                                                                    }
+                                                                    .shipping {
+                                                                        color: var(--fourthColor);
+                                                                        font-weight: 300;
+                                                                        font-size: 9px;
+                                                                        line-height: 25px;
+                                                                        letter-spacing: 0.19px;
+                                                                        @include media-breakpoint-up(lg) {
+                                                                            font-size: 15px;
+                                                                            line-height: 42px;
+                                                                            letter-spacing: 0.32px;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                .out {
+                                                                    color: var(--fourthColor);
+                                                                    @include media-breakpoint-up(lg) {
+                                                                        font-size: 15px;
+                                                                        line-height: 42px;
+                                                                        letter-spacing: 0.32px;
+                                                                    }
+                                                                }
+                                                            }
+                                                            .stars {
+                                                                span.number {
+                                                                    color: var(--fourthColor);
+                                                                    font-weight: 300;
+                                                                    font-size: 5px;
+                                                                    line-height: 6px;
+                                                                    letter-spacing: 0;
+                                                                    font-family: Roboto, sans-serif;
+                                                                    @include media-breakpoint-up(lg) {
+                                                                        font-size: 12px;
+                                                                        line-height: 14px;
+                                                                    }
+                                                                }
+                                                            }
+                                                            .cart {
+                                                                .add {
+                                                                    .plus,
+                                                                    .minus {
+                                                                        font-weight: 400;
+                                                                        font-size: 11px;
+                                                                        line-height: 21px;
+                                                                        border: 1px solid var(--fourthColor);
+                                                                        color: 1px solid var(--fourthColor);
+                                                                        height: 23px;
+                                                                        width: 23px;
+                                                                        letter-spacing: 0;
+                                                                        @include media-breakpoint-up(lg) {
+                                                                            font-size: 17px;
+                                                                            line-height: 36px;
+                                                                            letter-spacing: 0.36px;
+                                                                            width: 34px;
+                                                                            height: 34px;
+                                                                        }
+                                                                    }
+                                                                    .plus {}
+                                                                    .number {
+                                                                        font-weight: 400;
+                                                                        font-size: 14px;
+                                                                        line-height: 29px;
+                                                                        letter-spacing: 0.29px;
+                                                                        @include media-breakpoint-up(lg) {
+                                                                            font-size: 20px;
+                                                                            line-height: 42px;
+                                                                            letter-spacing: 0.42px;
+                                                                        }
+                                                                    }
+                                                                    .minus {}
+                                                                }
+                                                                .add-cart {
+                                                                    color: #FFF;
+                                                                    font-weight: 400;
+                                                                    font-size: 12px;
+                                                                    line-height: 27px;
+                                                                    letter-spacing: 0.25px;
+                                                                    font-style: italic;
+                                                                    background-color: var(--tierd-color);
+                                                                    @include media-breakpoint-up(lg) {
+                                                                        font-size: 19px;
+                                                                        line-height: 37px;
+                                                                        letter-spacing: 0.4px;
+                                                                    }
+                                                                }
+                                                                .wishlist {
+                                                                    >img {
+                                                                        @include media-breakpoint-up(lg) {
+                                                                            width: 24px;
+                                                                            height: 21px;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                            .informations-tabs {
+                                                                .nav-tabs {
+                                                                    margin-bottom: 0;
+                                                                    .nav-item {
+                                                                        .nav-link {
+                                                                            font-weight: 300;
+                                                                            font-size: 7px;
+                                                                            line-height: 20px;
+                                                                            letter-spacing: 0.15px;
+                                                                            color: var(--fourthColor);
+                                                                            border: 1px solid var(--fourthColor);
+                                                                            padding: 0 1rem;
+                                                                            @include media-breakpoint-up(lg) {
+                                                                                font-size: 15px;
+                                                                                line-height: 30px;
+                                                                                letter-spacing: 0.32px;
+                                                                            }
+                                                                            &.active {
+                                                                                color: #FFF;
+                                                                                background-color: #000;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                .tab-content {
+                                                                    >div {
+                                                                        p {
+                                                                            font-weight: 300;
+                                                                            font-size: 8px;
+                                                                            letter-spacing: 0.15px;
+                                                                            line-height: 9px;
+                                                                            color: var(--fourthColor);
+                                                                            @include media-breakpoint-up(lg) {
+                                                                                font-size: 17px;
+                                                                                line-height: 21px;
+                                                                                letter-spacing: 0.36px;
+                                                                                width: 84%;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    ont-size: 7px;
+                                                                    line-height: 20px;
+                                                                    letter-spacing: 0.15px;
+                                                                    color: var(--fourthColor);
+                                                                    border: 1px solid var(--fourthColor);
+                                                                    product padding: 0 1rem;
+                                                                    @include media-breakpoint-up(lg) {
+                                                                        font-size: 15px;
+                                                                        line-height: 30px;
+                                                                        letter-spacing: 0.32px;
+                                                                    }
+                                                                    &.active {
+                                                                        color: #FFF;
+                                                                        background-color: #000;
+                                                                    }
+                                                                }
+                                                            }
+                                                            .3
+                                                        }
+                                                        .tab-content {
+                                                            >div {
+                                                                p {
+                                                                    font-weight: 300;
+                                                                    font-size: 8px;
+                                                                    letter-spacing: 0.15px;
+                                                                    line-height: 9px;
+                                                                    color: var(--fourthColor);
+                                                                    @include media-breakpoint-up(lg) {
+                                                                        font-size: 17px;
+                                                                        line-height: 21px;
+                                                                        letter-spacing: 0.36px;
+                                                                        .product-description {
+                                                                            >div {
+                                                                                @include media-breakpoint-up(lg) {
+                                                                                    width: 69%;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    .product-tabs {
+                                                                        .nav-tabs {
+                                                                            margin-bottom: 0;
+                                                                            .nav-item {
+                                                                                .nav-link {
+                                                                                    font-weight: 300;
+                                                                                    font-size: 7px;
+                                                                                    line-height: 20px;
+                                                                                    letter-spacing: 0.15px;
+                                                                                    color: var(--fourthColor);
+                                                                                    border: 1px solid var(--fourthColor);
+                                                                                    padding: 0 1.3rem;
+                                                                                    @include media-breakpoint-up(lg) {
+                                                                                        font-size: 15px;
+                                                                                        line-height: 30px;
+                                                                                        .products-advise {
+                                                                                            h2.advise {
+                                                                                                font-weight: 300;
+                                                                                                font-size: 13px;
+                                                                                                line-height: 19px;
+                                                                                                letter-spacing: 0.27px;
+                                                                                                color: var(--fourthcolor);
+                                                                                                margin-bottom: 3rem;
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    font-size: 29px;
+                                                                                                    letter-spacing: 0.61px;
+                                                                                                    line-height: 42px;
+                                                                                                    margin-bottom: 6rem;
+                                                                                                }
+                                                                                                &:before,
+                                                                                                &:after {
+                                                                                                    content: "";
+                                                                                                    height: 2px;
+                                                                                                    background-color: #d8d7d7;
+                                                                                                    width: 76px;
+                                                                                                    position: absolute;
+                                                                                                    @include media-breakpoint-up(md) {
+                                                                                                        width: 30%;
+                                                                                                    }
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        width: 35%;
+                                                                                                    }
+                                                                                                }
+                                                                                                &:before {
+                                                                                                    left: 0;
+                                                                                                    bottom: 50%;
+                                                                                                }
+                                                                                                &:after {
+                                                                                                    right: 0;
+                                                                                                    bottom: 50%;
+                                                                                                }
+                                                                                            }
+                                                                                            .owl-carousel {
+                                                                                                .owl-stage {
+                                                                                                     :not(:first-child),
+                                                                                                     :not(:last-child) {
+                                                                                                        .product {
+                                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                                border-right: 1px solid var(--fourthColor);
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                    > :nth-child(odd) {
+                                                                                                        //color: red;
+                                                                                                        .product {
+                                                                                                            border-right: 1px solid var(--fourthColor);
+                                                                                                        }
+                                                                                                    }
+                                                                                                    > :nth-child(even) {
+                                                                                                        //color: blue;
+                                                                                                        //
+                                                                                                        //.product {
+                                                                                                        //    border-left: 1px solid var(--fourthColor);
+                                                                                                        //}
+                                                                                                    }
+                                                                                                    .product {
+                                                                                                        position: relative;
+                                                                                                        padding-top: 10px;
+                                                                                                        padding-bottom: 10px;
+                                                                                                        img.img-product {
+                                                                                                            width: 100px;
+                                                                                                            height: 150px;
+                                                                                                            object-fit: contain;
+                                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                                width: 150px;
+                                                                                                                height: 258px;
+                                                                                                            }
+                                                                                                        }
+                                                                                                        h4 {
+                                                                                                            //font: normal normal medium 6px/8px Lato;
+                                                                                                            font-weight: normal;
+                                                                                                            font-size: 9px;
+                                                                                                            line-height: 8px;
+                                                                                                            letter-spacing: 0.45px;
+                                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                                font-size: 16px;
+                                                                                                            }
+                                                                                                        }
+                                                                                                        div.stars {
+                                                                                                            img {
+                                                                                                                width: 13px;
+                                                                                                                height: 13px;
+                                                                                                            }
+                                                                                                        }
+                                                                                                        .star-percentage {
+                                                                                                            font: normal normal 300 9px/11px Roboto;
+                                                                                                            letter-spacing: 0;
+                                                                                                            color: var(--fourthColor)
+                                                                                                        }
+                                                                                                        a {
+                                                                                                            font-style: italic;
+                                                                                                            font-size: 8px;
+                                                                                                            letter-spacing: 0.38px;
+                                                                                                            background-color: var(--tierd-color);
+                                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                                font-size: 18px;
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                    .dropdown-cart {
+                                                                                        background-color: #000;
+                                                                                    }
+                                                                                    /* Start Contact Page */
+                                                                                    .contact-page {
+                                                                                        width: 100%;
+                                                                                        height: 100%;
+                                                                                        display: block;
+                                                                                        position: relative;
+                                                                                        &::before {
+                                                                                            content: "";
+                                                                                            background-image: url("/images/contact-us.png");
+                                                                                            opacity: 0.5;
+                                                                                            top: 0;
+                                                                                            left: 0;
+                                                                                            bottom: 0;
+                                                                                            right: 0;
+                                                                                            position: absolute;
+                                                                                            z-index: -1;
+                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                background-image: none;
+                                                                                            }
+                                                                                        }
+                                                                                        @include media-breakpoint-up(lg) {
+                                                                                            background-image: none;
+                                                                                            opacity: 1;
+                                                                                        }
+                                                                                        .left {
+                                                                                            h1 {
+                                                                                                font-size: 36px;
+                                                                                                line-height: 44px;
+                                                                                                letter-spacing: 0;
+                                                                                                font-weight: 300;
+                                                                                                color: #000;
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    font-size: 71px;
+                                                                                                    line-height: 85px;
+                                                                                                    color: var(--tierd-color)
+                                                                                                }
+                                                                                            }
+                                                                                            form {
+                                                                                                input[type="text"],
+                                                                                                input[type="tel"],
+                                                                                                input[type="email"],
+                                                                                                textarea {
+                                                                                                    font-size: 7px;
+                                                                                                    line-height: 22px;
+                                                                                                    letter-spacing: 0.14px;
+                                                                                                    font-weight: 300;
+                                                                                                    color: #000;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        font-size: 15px;
+                                                                                                        line-height: 22px;
+                                                                                                        background-color: #F2F2F2;
+                                                                                                    }
+                                                                                                    &::placeholder {
+                                                                                                        font-size: 7px;
+                                                                                                        line-height: 22px;
+                                                                                                        letter-spacing: 0.14px;
+                                                                                                        font-weight: 300;
+                                                                                                        color: #000;
+                                                                                                        @include media-breakpoint-up(lg) {
+                                                                                                            font-size: 15px;
+                                                                                                            line-height: 22px;
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                                button {
+                                                                                                    background-color: var(--tierd-color);
+                                                                                                    font-size: 13px;
+                                                                                                    line-height: 16px;
+                                                                                                    letter-spacing: 0.52px;
+                                                                                                    font-weight: 400;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        font-size: 25px;
+                                                                                                        line-height: 30px;
+                                                                                                    }
+                                                                                                    &:hover {
+                                                                                                        background-color: #000;
+                                                                                                        transition: background-color 0.5s ease-in-out;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                            .contact-info {
+                                                                                                >div {
+                                                                                                    i {
+                                                                                                        width: 20px;
+                                                                                                        height: 11px;
+                                                                                                        @include media-breakpoint-up(lg) {
+                                                                                                            width: 30px;
+                                                                                                        }
+                                                                                                    }
+                                                                                                    span {
+                                                                                                        font-size: 8px;
+                                                                                                        line-height: 25px;
+                                                                                                        letter-spacing: 0.16px;
+                                                                                                        font-weight: 400;
+                                                                                                        color: #000;
+                                                                                                        @include media-breakpoint-up(lg) {
+                                                                                                            font-size: 16px;
+                                                                                                            line-height: 25px;
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        .right {
+                                                                                            img {
+                                                                                                object-fit: cover;
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                    /* End Contact Page */
+                                                                                    /* Start Our History Page */
+                                                                                    .our-history-page {
+                                                                                        overflow: hidden;
+                                                                                        .header {
+                                                                                            background-image: url("/images/our-history-bg.png");
+                                                                                            background-color: var(--tierd-color);
+                                                                                            background-repeat: no-repeat;
+                                                                                            background-position-y: bottom;
+                                                                                            //height: 297px;
+                                                                                            padding: 3rem;
+                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                padding: 13rem;
+                                                                                                height: 100%;
+                                                                                                background-size: 40%;
+                                                                                                background-position-x: right;
+                                                                                            }
+                                                                                            h1 {
+                                                                                                color: #FFF;
+                                                                                                font-size: 25px;
+                                                                                                line-height: 25px;
+                                                                                                font-weight: 300;
+                                                                                                letter-spacing: 0;
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    font-size: 72px;
+                                                                                                    line-height: 59px;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        .why {
+                                                                                            h2 {
+                                                                                                color: var(--tierd-color);
+                                                                                                font-size: 16px;
+                                                                                                line-height: 59px;
+                                                                                                font-weight: 300;
+                                                                                                letter-spacing: 0;
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    font-size: 42px;
+                                                                                                    line-height: 59px;
+                                                                                                }
+                                                                                            }
+                                                                                            p {
+                                                                                                color: #000;
+                                                                                                font-size: 8px;
+                                                                                                line-height: 8px;
+                                                                                                font-weight: 300;
+                                                                                                letter-spacing: 0;
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    font-size: 19px;
+                                                                                                    line-height: 27px;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        .standards {
+                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                background-color: var(--tierd-color);
+                                                                                            }
+                                                                                            .left {
+                                                                                                img {}
+                                                                                            }
+                                                                                            .right {
+                                                                                                width: 100%;
+                                                                                                height: 100%;
+                                                                                                display: block;
+                                                                                                position: relative;
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    width: 50%;
+                                                                                                }
+                                                                                                &::before {
+                                                                                                    content: "";
+                                                                                                    background-image: url("/images/olive-oil.png");
+                                                                                                    background-repeat: no-repeat;
+                                                                                                    background-position: right;
+                                                                                                    opacity: 0.5;
+                                                                                                    top: 0;
+                                                                                                    left: 0;
+                                                                                                    bottom: 0;
+                                                                                                    right: 0;
+                                                                                                    position: absolute;
+                                                                                                    z-index: -1;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        background-image: none;
+                                                                                                    }
+                                                                                                }
+                                                                                                h2 {
+                                                                                                    color: #000;
+                                                                                                    font-size: 13px;
+                                                                                                    line-height: 18px;
+                                                                                                    font-weight: 300;
+                                                                                                    letter-spacing: 0;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        font-size: 41px;
+                                                                                                        line-height: 59px;
+                                                                                                        color: #fff;
+                                                                                                        //width: 40%;
+                                                                                                    }
+                                                                                                }
+                                                                                                p {
+                                                                                                    color: #000;
+                                                                                                    font-size: 8px;
+                                                                                                    line-height: 8px;
+                                                                                                    font-weight: 300;
+                                                                                                    letter-spacing: 0;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        font-size: 19px;
+                                                                                                        line-height: 23px;
+                                                                                                        color: #fff;
+                                                                                                        width: 80%;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        .proprieties {
+                                                                                            .top {
+                                                                                                h2 {
+                                                                                                    color: var(--tierd-color);
+                                                                                                    font-size: 13px;
+                                                                                                    line-height: 17px;
+                                                                                                    font-weight: 300;
+                                                                                                    letter-spacing: 0;
+                                                                                                    border-bottom: 2px solid #ccc;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        font-size: 40px;
+                                                                                                        line-height: 59px;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                            .bottom {
+                                                                                                //&:after {
+                                                                                                //    content: "";
+                                                                                                //    left: 50%;
+                                                                                                //    height: 1px;
+                                                                                                //    width: 93%;
+                                                                                                //    background-color: #ccc;
+                                                                                                //    transform: translateX(-50%);
+                                                                                                //    position: absolute;
+                                                                                                //    bottom: 0;
+                                                                                                //}
+                                                                                                .left {
+                                                                                                    border-bottom: 1px solid #ccc;
+                                                                                                }
+                                                                                                .right {
+                                                                                                    img {
+                                                                                                        width: 136px;
+                                                                                                    }
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        //border-bottom: 0;
+                                                                                                    }
+                                                                                                }
+                                                                                                h2 {
+                                                                                                    font-size: 13px;
+                                                                                                    line-height: 59px;
+                                                                                                    font-weight: 400;
+                                                                                                    letter-spacing: 0;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        font-size: 42px;
+                                                                                                        line-height: 59px;
+                                                                                                    }
+                                                                                                }
+                                                                                                p {
+                                                                                                    font-size: 8px;
+                                                                                                    line-height: 11px;
+                                                                                                    font-weight: 300;
+                                                                                                    letter-spacing: 0;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        font-size: 19px;
+                                                                                                        line-height: 27px;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                    /* End Our History Page */
+                                                                                    /* End Footer  */
+                                                                                    footer {
+                                                                                        margin-top: 1.5rem;
+                                                                                        @include media-breakpoint-up(lg) {
+                                                                                            margin-top: 8rem;
+                                                                                        }
+                                                                                        .top {
+                                                                                            margin-bottom: 3rem;
+                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                margin-bottom: 5rem;
+                                                                                            }
+                                                                                            .policies {
+                                                                                                img {
+                                                                                                    width: 68px;
+                                                                                                    height: 42px;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        height: 84px;
+                                                                                                        width: 111px;
+                                                                                                    }
+                                                                                                }
+                                                                                                p {
+                                                                                                    font: normal normal 300 7px/9px Roboto;
+                                                                                                    letter-spacing: 0.15px;
+                                                                                                    color: var(--fourthColor);
+                                                                                                    @include media-breakpoint-up(md) {
+                                                                                                        font-size: 17px;
+                                                                                                        line-height: 21px;
+                                                                                                        letter-spacing: 0.36px;
+                                                                                                        width: 42%;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        .bottom {
+                                                                                            //background-color: var(--tierd-color);
+                                                                                            background-image: url("/images/footer-green-bg.svg");
+                                                                                            padding-top: 5rem;
+                                                                                            background-position-x: 63rem;
+                                                                                            background-size: cover;
+                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                padding-top: 10rem;
+                                                                                                background-position-x: right;
+                                                                                            }
+                                                                                            .logo {
+                                                                                                width: 112px;
+                                                                                                aspect-ratio: 112/31;
+                                                                                                object-fit: contain;
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    width: 243px;
+                                                                                                    height: 67px;
+                                                                                                }
+                                                                                            }
+                                                                                            span.contact-us {
+                                                                                                font: normal normal 300 6px/7px Lato;
+                                                                                                letter-spacing: 0;
+                                                                                                color: #FFFFFF;
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    font-size: 10px;
+                                                                                                    line-height: 12px;
+                                                                                                }
+                                                                                            }
+                                                                                            .social-media {
+                                                                                                margin-bottom: 58px;
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    margin-bottom: 0;
+                                                                                                }
+                                                                                                a {
+                                                                                                    img {
+                                                                                                        width: 16px;
+                                                                                                        height: 16px;
+                                                                                                        @include media-breakpoint-up(lg) {
+                                                                                                            width: 21px;
+                                                                                                            height: 21px;
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                            .logo-social-media {
+                                                                                                >div {
+                                                                                                    width: 50%;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        width: 100%;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                            .subscribe-urls {
+                                                                                                >p {
+                                                                                                    width: 75%;
+                                                                                                    font: normal normal 300 12px/15px Lato;
+                                                                                                    letter-spacing: 0;
+                                                                                                    color: #FFF;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        width: 100%;
+                                                                                                        font-size: 24px;
+                                                                                                        line-height: 29px;
+                                                                                                    }
+                                                                                                }
+                                                                                                form {
+                                                                                                    fieldset {
+                                                                                                        input[type="email"] {
+                                                                                                            height: 22px;
+                                                                                                            color: var(--fourthColor);
+                                                                                                            font: normal normal 300 9px/11px Lato;
+                                                                                                            letter-spacing: 0;
+                                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                                font-size: 15px;
+                                                                                                                line-height: 18px;
+                                                                                                                padding: 21px;
+                                                                                                            }
+                                                                                                            &::placeholder {
+                                                                                                                color: var(--fourthColor);
+                                                                                                            }
+                                                                                                        }
+                                                                                                        input[type="submit"] {
+                                                                                                            background: #000;
+                                                                                                            font: normal normal 300 10px/9px Lato;
+                                                                                                            letter-spacing: 0.45px;
+                                                                                                            color: #fff;
+                                                                                                            border-radius: 0;
+                                                                                                            @include media-breakpoint-up(sm) {
+                                                                                                                font-size: 17px;
+                                                                                                            }
+                                                                                                            @include media-breakpoint-up(md) {
+                                                                                                                font-size: 19px;
+                                                                                                            }
+                                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                                font-size: 15px;
+                                                                                                                line-height: 18px;
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                                ul {
+                                                                                                    li {
+                                                                                                        a {
+                                                                                                            font: normal normal 300 6px/20px Roboto;
+                                                                                                            letter-spacing: 0;
+                                                                                                            color: #FFFFFF;
+                                                                                                            text-decoration: none;
+                                                                                                            @include media-breakpoint-up(lg) {
+                                                                                                                font-size: 11px;
+                                                                                                                line-height: 41px;
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                            .two-womens {
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    width: 250px;
+                                                                                                    height: 373px;
+                                                                                                    object-fit: contain;
+                                                                                                }
+                                                                                            }
+                                                                                            .tree {
+                                                                                                width: 184px;
+                                                                                                height: 270px;
+                                                                                                top: -55px;
+                                                                                                object-fit: cover;
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    top: -21%;
+                                                                                                    width: 416px;
+                                                                                                    height: 658px;
+                                                                                                }
+                                                                                                @include media-breakpoint-up(xl) {
+                                                                                                    //top: -21%;
+                                                                                                    width: 416px;
+                                                                                                    height: 658px;
+                                                                                                }
+                                                                                                @include media-breakpoint-up(xxl) {
+                                                                                                    //top: -20%;
+                                                                                                    width: 443px;
+                                                                                                    height: 664px;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        .copyright {
+                                                                                            p {
+                                                                                                font: normal normal 300 6px/7px Lato;
+                                                                                                letter-spacing: 0;
+                                                                                                color: var(--fourthColor);
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    font-size: 13px;
+                                                                                                    line-height: 16px;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                    /* End Footer  */
+                                                                                    /* Start Cart Page */
+                                                                                    .cart-page {
+                                                                                        .btn {
+                                                                                            background-color: var(--tierd-color);
+                                                                                            border: 0;
+                                                                                        }
+                                                                                        .cart {
+                                                                                            .add {
+                                                                                                .plus,
+                                                                                                .minus {
+                                                                                                    font-weight: 400;
+                                                                                                    font-size: 11px;
+                                                                                                    line-height: 21px;
+                                                                                                    border: 1px solid var(--fourthColor);
+                                                                                                    color: 1px solid var(--fourthColor);
+                                                                                                    height: 23px;
+                                                                                                    width: 23px;
+                                                                                                    letter-spacing: 0;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        font-size: 17px;
+                                                                                                        line-height: 26px;
+                                                                                                        letter-spacing: 0.36px;
+                                                                                                        width: 28px;
+                                                                                                        height: 28px;
+                                                                                                    }
+                                                                                                }
+                                                                                                .plus {}
+                                                                                                .number {
+                                                                                                    font-weight: 400;
+                                                                                                    font-size: 14px;
+                                                                                                    line-height: 29px;
+                                                                                                    letter-spacing: 0.29px;
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        font-size: 20px;
+                                                                                                        line-height: 42px;
+                                                                                                        letter-spacing: 0.42px;
+                                                                                                    }
+                                                                                                }
+                                                                                                .minus {}
+                                                                                            }
+                                                                                            .add-cart {
+                                                                                                color: #FFF;
+                                                                                                font-weight: 400;
+                                                                                                font-size: 12px;
+                                                                                                line-height: 27px;
+                                                                                                letter-spacing: 0.25px;
+                                                                                                font-style: italic;
+                                                                                                background-color: var(--tierd-color);
+                                                                                                @include media-breakpoint-up(lg) {
+                                                                                                    font-size: 19px;
+                                                                                                    line-height: 37px;
+                                                                                                    letter-spacing: 0.4px;
+                                                                                                }
+                                                                                            }
+                                                                                            .wishlist {
+                                                                                                >img {
+                                                                                                    @include media-breakpoint-up(lg) {
+                                                                                                        width: 24px;
+                                                                                                        height: 21px;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                    /* End Cart Page */
+                                                                                    /* Start Shipping Page */
+                                                                                    .shipping-page {
+                                                                                        button {
+                                                                                            background-color: var(--tierd-color);
+                                                                                            color: #fff;
+                                                                                        }
+                                                                                    }
+                                                                                    /* End Shipping Page */
+                                                                                    .bg-slider {
+                                                                                        background-image: url('/storage/images/img3.png');
+                                                                                        background-size: cover;
+                                                                                    }
+                                                                                    .purple {
+                                                                                        background: #7000ff;
+                                                                                    }
+                                                                                    .w_50 {
+                                                                                        width: 10px;
+                                                                                        height: 10px;
+                                                                                    }
+                                                                                    .w-medium {
+                                                                                        width: 90px;
+                                                                                    }
+                                                                                    .dropleft .dropdown-toggle::before {
+                                                                                        content: none;
+                                                                                    }
+                                                                                    .w-10 {
+                                                                                        width: 40px;
+                                                                                        height: 40px;
+                                                                                    }
+                                                                                    .bg-grey {
+                                                                                        background-color: #eee;
+                                                                                    }
+                                                                                    .h-450 {
+                                                                                        height: 450px !important;
+                                                                                    }
+                                                                                    .w-h-25 {
+                                                                                        width: 25%;
+                                                                                        height: 25%;
+                                                                                    }
+                                                                                    .font-rem {
+                                                                                        font-size: 1.27rem;
+                                                                                    }
+                                                                                    .font-rem-sm {
+                                                                                        font-size: 0.9rem;
+                                                                                    }
+                                                                                    .p-6 {
+                                                                                        padding: 4.3rem;
+                                                                                    }
+                                                                                    .bg-blue {
+                                                                                        background: linear-gradient(0deg, #fff 16.95%, #286dc2 72.64%, #002c62 121.39%);
+                                                                                    }
+                                                                                    .level-marker {
+                                                                                        width: 80%;
+                                                                                        list-style: none;
+                                                                                        display: flex;
+                                                                                        -webkit-box-pack: justify;
+                                                                                        justify-content: space-between;
+                                                                                        margin: 0 0 35px;
+                                                                                        padding: 0;
+                                                                                        position: relative;
+                                                                                    }
+                                                                                    .level-marker li {
+                                                                                        display: flex;
+                                                                                        -webkit-box-pack: center;
+                                                                                        justify-content: center;
+                                                                                        -webkit-box-align: center;
+                                                                                        align-items: center;
+                                                                                        -webkit-box-orient: vertical;
+                                                                                        -webkit-box-direction: normal;
+                                                                                        flex-direction: column;
+                                                                                        z-index: 1;
+                                                                                    }
+                                                                                    .marker {
+                                                                                        width: 14px;
+                                                                                        height: 14px;
+                                                                                        background: #fff;
+                                                                                        border-radius: 50%;
+                                                                                        border: 3px solid #d3d3d3;
+                                                                                        margin-bottom: 5px;
+                                                                                        box-sizing: content-box;
+                                                                                    }
+                                                                                    .level-marker li.blue .marker {
+                                                                                        border: 8px solid #286dc1;
+                                                                                    }
+                                                                                    .level-marker::after {
+                                                                                        content: "";
+                                                                                        height: 4px;
+                                                                                        width: 90%;
+                                                                                        position: absolute;
+                                                                                        left: 0;
+                                                                                        top: 12px;
+                                                                                        background: #d3d3d3;
+                                                                                        z-index: 0;
+                                                                                    }
+                                                                                    .fixed {
+                                                                                        position: fixed;
+                                                                                        bottom: 36px;
+                                                                                        z-index: 51;
+                                                                                        right: 36px;
+                                                                                    }
+                                                                                    .color-purple {
+                                                                                        color: #7000ff;
+                                                                                    }
+                                                                                    .rounded-xl {
+                                                                                        border-radius: 15px;
+                                                                                    }
+                                                                                    .rounded-2xl {
+                                                                                        border-radius: 30px;
+                                                                                    }
+                                                                                    .rounded-top-xl {
+                                                                                        border-top-left-radius: 15px;
+                                                                                        border-top-right-radius: 15px;
+                                                                                    }
+                                                                                    .rounded-top-2xl {
+                                                                                        border-top-left-radius: 30px;
+                                                                                        border-top-right-radius: 30px;
+                                                                                    }
+                                                                                    .m-top {
+                                                                                        margin-top: -15px;
+                                                                                    }
+                                                                                    .gap {
+                                                                                        margin-bottom: 20px;
+                                                                                    }
+                                                                                    .sm-font {
+                                                                                        font-size: 0.6rem;
+                                                                                    }
+                                                                                    .wdth {
+                                                                                        width: 40px;
+                                                                                    }
+                                                                                    .btn_ {
+                                                                                        width: 50px;
+                                                                                    }
+                                                                                    .ml-xl {
+                                                                                        left: 65px;
+                                                                                    }
+                                                                                    .text-gray-500 {
+                                                                                        color: rgba(107, 114, 128, 1);
+                                                                                    }
+                                                                                    .text-gray-500:hover {
+                                                                                        color: rgba(131, 24, 67, 1);
+                                                                                    }
+                                                                                    .text-gray {
+                                                                                        color: #4a4a4a;
+                                                                                        font-weight: 600;
+                                                                                        font-size: 12px;
+                                                                                        line-height: 17px;
+                                                                                        letter-spacing: -.35px;
+                                                                                    }
+                                                                                    .separator {
+                                                                                        border-bottom: 1px solid #f5f5f5;
+                                                                                        border-top: none;
+                                                                                        border-left: none;
+                                                                                        border-right: none;
+                                                                                    }
+                                                                                    .progress {
+                                                                                        height: 0.3rem;
+                                                                                    }
+                                                                                    .progress_ {
+                                                                                        width: 160px;
+                                                                                        height: 160px !important;
+                                                                                        float: left;
+                                                                                        line-height: 150px;
+                                                                                        background: none;
+                                                                                        box-shadow: none;
+                                                                                        position: relative
+                                                                                    }
+                                                                                    .progress_:after {
+                                                                                        content: "";
+                                                                                        width: 100%;
+                                                                                        height: 100%;
+                                                                                        border-radius: 50%;
+                                                                                        border: 12px solid #fff;
+                                                                                        position: absolute;
+                                                                                        top: 0;
+                                                                                        left: 0
+                                                                                    }
+                                                                                    .progress_>span {
+                                                                                        width: 50%;
+                                                                                        height: 100%;
+                                                                                        overflow: hidden;
+                                                                                        position: absolute;
+                                                                                        top: 0;
+                                                                                        z-index: 1
+                                                                                    }
+                                                                                    .progress_ .progress-left {
+                                                                                        left: 0
+                                                                                    }
+                                                                                    .progress_ .progress-bar {
+                                                                                        width: 100%;
+                                                                                        height: 100%;
+                                                                                        background: none;
+                                                                                        border-width: 12px;
+                                                                                        border-style: solid;
+                                                                                        position: absolute;
+                                                                                        top: 0
+                                                                                    }
+                                                                                    .progress_ .progress-left .progress-bar {
+                                                                                        left: 100%;
+                                                                                        border-top-right-radius: 80px;
+                                                                                        border-bottom-right-radius: 80px;
+                                                                                        border-left: 0;
+                                                                                        -webkit-transform-origin: center left;
+                                                                                        transform-origin: center left
+                                                                                    }
+                                                                                    .progress_ .progress-right {
+                                                                                        right: 0
+                                                                                    }
+                                                                                    .progress_ .progress-right .progress-bar {
+                                                                                        left: -100%;
+                                                                                        border-top-left-radius: 80px;
+                                                                                        border-bottom-left-radius: 80px;
+                                                                                        border-right: 0;
+                                                                                        -webkit-transform-origin: center right;
+                                                                                        transform-origin: center right;
+                                                                                        animation: loading-1 1.8s linear forwards
+                                                                                    }
+                                                                                    .progress_ .progress-value {
+                                                                                        width: 90%;
+                                                                                        height: 90%;
+                                                                                        border-radius: 50%;
+                                                                                        background: transparent;
+                                                                                        font-size: 16px;
+                                                                                        color: #000;
+                                                                                        line-height: 25px;
+                                                                                        text-align: center;
+                                                                                        position: absolute;
+                                                                                        top: 20%;
+                                                                                        left: 5%
+                                                                                    }
+                                                                                    .progress_.blue .progress-bar {
+                                                                                        border-color: #04aef1be;
+                                                                                    }
+                                                                                    .progress_.blue .progress-left .progress-bar {
+                                                                                        animation: loading-2 1.5s linear forwards 1.8s
+                                                                                    }
+                                                                                    .progress_.yellow .progress-bar {
+                                                                                        border-color: #fdba04
+                                                                                    }
+                                                                                    .progress_.yellow .progress-right .progress-bar {
+                                                                                        animation: loading-3 1.8s linear forwards
+                                                                                    }
+                                                                                    .progress_.yellow .progress-left .progress-bar {
+                                                                                        animation: none
+                                                                                    }
+                                                                                    @keyframes loading-1 {
+                                                                                        0% {
+                                                                                            -webkit-transform: rotate(0deg);
+                                                                                            transform: rotate(0deg)
+                                                                                        }
+                                                                                        100% {
+                                                                                            -webkit-transform: rotate(180deg);
+                                                                                            transform: rotate(180deg)
+                                                                                        }
+                                                                                    }
+                                                                                    @keyframes loading-2 {
+                                                                                        0% {
+                                                                                            -webkit-transform: rotate(0deg);
+                                                                                            transform: rotate(0deg)
+                                                                                        }
+                                                                                        100% {
+                                                                                            -webkit-transform: rotate(144deg);
+                                                                                            transform: rotate(144deg)
+                                                                                        }
+                                                                                    }
+                                                                                    @keyframes loading-3 {
+                                                                                        0% {
+                                                                                            -webkit-transform: rotate(0deg);
+                                                                                            transform: rotate(0deg)
+                                                                                        }
+                                                                                        100% {
+                                                                                            -webkit-transform: rotate(135deg);
+                                                                                            transform: rotate(135deg)
+                                                                                        }
+                                                                                    }
+                                                                                    .image {
+                                                                                        width: 40px;
+                                                                                        height: 25px;
+                                                                                        margin-left: 2px;
+                                                                                        margin-right: 2px;
+                                                                                    }
+                                                                                    .small {
+                                                                                        font-size: small;
+                                                                                    }
+                                                                                    .mx-width {
+                                                                                        max-width: 700px;
+                                                                                    }
+                                                                                    .h-70 {
+                                                                                        height: 70px !important;
+                                                                                    }
+                                                                                    .h-50 {
+                                                                                        height: 50px !important;
+                                                                                    }
+                                                                                    .w-h-33 {
+                                                                                        width: 33px;
+                                                                                        height: 33px;
+                                                                                    }
+                                                                                    .w-h-25 {
+                                                                                        width: 25px;
+                                                                                        height: 25px;
+                                                                                    }
+                                                                                    .w-120 {
+                                                                                        width: 120px;
+                                                                                        height: 120px !important;
+                                                                                        float: left;
+                                                                                        line-height: 150px;
+                                                                                        background: none;
+                                                                                        box-shadow: none;
+                                                                                        position: relative;
+                                                                                        margin: 15px;
+                                                                                    }
+                                                                                    a {
+                                                                                        color: #000;
+                                                                                    }
+                                                                                    a:hover {
+                                                                                        color: #ff6262;
+                                                                                    }
+                                                                                    .cursor-pointer {
+                                                                                        cursor: pointer;
+                                                                                    }
+                                                                                    // Small devices (landscape phones, 576px and up)
+                                                                                    @media (max-width: 576px) {
+                                                                                        .camp>.card {
+                                                                                            display: flex;
+                                                                                            flex-direction: column !important;
+                                                                                            justify-content: center !important;
+                                                                                        }
+                                                                                        .infos {
+                                                                                            display: flex;
+                                                                                            flex-direction: column !important;
+                                                                                        }
+                                                                                        .progressBar {
+                                                                                            order: -1;
+                                                                                            align-items: center;
+                                                                                            margin-bottom: 50px;
+                                                                                        }
+                                                                                        .wish {
+                                                                                            display: flex;
+                                                                                            flex-direction: column !important;
+                                                                                            justify-self: start;
+                                                                                        }
+                                                                                        .frm {
+                                                                                            width: 100%;
+                                                                                        }
+                                                                                        .btns {
+                                                                                            align-items: flex-end !important;
+                                                                                        }
+                                                                                        .winners {
+                                                                                            display: flex;
+                                                                                            flex-direction: column !important;
+                                                                                        }
+                                                                                        .sociale {
+                                                                                            display: flex;
+                                                                                            flex-direction: row;
+                                                                                            flex-wrap: wrap !important;
+                                                                                            justify-content: flex-start !important;
+                                                                                            padding: 0;
+                                                                                        }
+                                                                                        .store {
+                                                                                            justify-content: flex-start !important;
+                                                                                        }
+                                                                                        .quick-links {
+                                                                                            margin-bottom: 20px;
+                                                                                        }
+                                                                                        .customer-services {
+                                                                                            margin-bottom: 20px;
+                                                                                        }
+                                                                                        .bottom-menu {
+                                                                                            display: flex;
+                                                                                            flex-direction: column;
+                                                                                            justify-content: flex-start !important;
+                                                                                            margin-bottom: 15px;
+                                                                                        }
+                                                                                        .accept {
+                                                                                            display: flex;
+                                                                                            flex-direction: column;
+                                                                                            justify-content: flex-start !important;
+                                                                                        }
+                                                                                        .modal {
+                                                                                            width: 95% !important;
+                                                                                        }
+                                                                                        .progress_ {
+                                                                                            width: 120px !important;
+                                                                                            height: 120px !important;
+                                                                                            float: left;
+                                                                                            line-height: 150px;
+                                                                                            background: none;
+                                                                                            box-shadow: none;
+                                                                                            position: relative;
+                                                                                            margin: 15px;
+                                                                                            order: -1;
+                                                                                        }
+                                                                                        .progress_ .progress-value {
+                                                                                            width: 90%;
+                                                                                            height: 90%;
+                                                                                            border-radius: 50%;
+                                                                                            background: transparent;
+                                                                                            font-size: 16px;
+                                                                                            color: #000;
+                                                                                            line-height: 25px;
+                                                                                            text-align: center;
+                                                                                            position: absolute;
+                                                                                            top: 8%;
+                                                                                            left: 5%
+                                                                                        }
+                                                                                        .first {
+                                                                                            display: flex;
+                                                                                            flex-direction: column !important;
+                                                                                        }
+                                                                                        .m-5 {
+                                                                                            margin: 0.25rem !important;
+                                                                                        }
+                                                                                        .second {
+                                                                                            order: -1;
+                                                                                            display: flex;
+                                                                                            flex-direction: row !important;
+                                                                                            margin: 0.5rem !important;
+                                                                                        }
+                                                                                    }
+                                                                                    // Medium devices (tablets, 768px and up)
+                                                                                    @media (max-width: 768px) {
+                                                                                        .btns {
+                                                                                            display: flex;
+                                                                                            flex-direction: column;
+                                                                                            justify-content: flex-end !important;
+                                                                                            left: 5px;
+                                                                                        }
+                                                                                    }
+                                                                                    // Large devices (desktops, 992px and up)
+                                                                                    @media (max-width: 992px) {
+                                                                                        .btns {
+                                                                                            display: flex;
+                                                                                            flex-direction: column;
+                                                                                            justify-content: flex-end !important;
+                                                                                            left: 5px;
+                                                                                        }
+                                                                                    }
+                                                                                    // Extra large devices (large desktops, 1200px and up)
+                                                                                    @media (min-width: 1200px) {
+                                                                                        .btns {
+                                                                                            left: 20px;
+                                                                                        }
+                                                                                    }
+                                                                                    .image-preview {
+                                                                                        height: 300px;
+                                                                                        cursor: zoom-in;
+                                                                                    }
+                                                                                    .magnifier-container {
+                                                                                        display: inline-block;
+                                                                                        position: relative;
+                                                                                    }
+                                                                                    .magnifier {
+                                                                                        display: none;
+                                                                                        position: absolute;
+                                                                                        top: 0;
+                                                                                        left: 100%;
+                                                                                        overflow: hidden;
+                                                                                        height: 300px;
+                                                                                        width: 300px;
+                                                                                        border: 1px solid #ddd;
+                                                                                        border-radius: 10px;
+                                                                                        background-color: white;
+                                                                                    }
+                                                                                    .magnifier__img {
+                                                                                        width: 1000px;
+                                                                                        transform-origin: 150px 150px;
+                                                                                    }
+                                                                                    .loupe {
+                                                                                        display: none;
+                                                                                        position: absolute;
+                                                                                        width: 200px;
+                                                                                        height: 200px;
+                                                                                        border: 1px solid black;
+                                                                                        box-shadow: 5px 5px 12px black;
+                                                                                        background: rgba(0, 0, 0, 0.25);
+                                                                                        cursor: crosshair;
+                                                                                        overflow: hidden;
+                                                                                    }
+                                                                                    .loupe img {
+                                                                                        position: absolute;
+                                                                                        right: 0;
+                                                                                    }
+                                                                                    .fade-enter-active,
+                                                                                    .fade-leave-active {
+                                                                                        transition: opacity 3s;
+                                                                                    }
+                                                                                    .fade-enter,
+                                                                                    .fade-leave-to
+                                                                                    /* .fade-leave-active below version 2.1.8 */
+                                                                                    {
+                                                                                        opacity: 0;
+                                                                                    }
+                                                                                    .slide-fade-enter-active {
+                                                                                        transition: all 0.3s ease-out;
+                                                                                    }
+                                                                                    .slide-fade-leave-active {
+                                                                                        transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+                                                                                    }
+                                                                                    .slide-fade-enter-from,
+                                                                                    .slide-fade-leave-to {
+                                                                                        transform: translateX(20px);
+                                                                                        opacity: 0;
+                                                                                    }
+                                                                                    .magnify {
+                                                                                        position: relative;
+                                                                                        cursor: none
+                                                                                    }
+                                                                                    .magnify-large {
+                                                                                        position: absolute;
+                                                                                        display: none;
+                                                                                        width: 175px;
+                                                                                        height: 175px;
+                                                                                        -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+                                                                                        -moz-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+                                                                                        box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+                                                                                        -webkit-border-radius: 100%;
+                                                                                        -moz-border-radius: 100%;
+                                                                                        border-radius: 100%

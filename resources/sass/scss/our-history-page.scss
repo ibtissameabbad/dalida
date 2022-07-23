@@ -1,0 +1,275 @@
+.our-history-page {
+    overflow: hidden;
+    font-family: Nelphim, 'sans-serif';
+
+    h1.our-history {
+        font: normal normal normal 28px/39px Nelphim;
+        letter-spacing: 2.8px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 70px;
+            line-height: 59px;
+        }
+    }
+
+    .header {
+        background-image: url("/images/our-history-bg1.png");
+        background-color: var(--tierd-color);
+        background-repeat: no-repeat;
+        background-position-y: top;
+        padding: 3rem;
+        background-size: 100% 58%;
+
+        @include media-breakpoint-up(lg) {
+            height: 100%;
+            background-size: 48% 100%;
+            background-position-x: right;
+        }
+
+        .image-product {
+            @include media-breakpoint-up(lg) {
+                order: 2;
+            }
+
+            img.product {
+                width: 305px;
+                height: 397px;
+                object-fit: contain;
+
+                @include media-breakpoint-up(lg) {
+                    height: 519px;
+                    width: 347px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .text {
+            @include media-breakpoint-up(lg) {
+                order: 1;
+                text-align: left;
+            }
+
+            p {
+                font: normal normal normal 14px/17px Nelphim;
+                letter-spacing: 0.25px;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 30px;
+                    line-height: 37px;
+                }
+            }
+
+            >div {
+                @include media-breakpoint-up(lg) {
+                    width: 85%;
+                }
+            }
+        }
+    }
+
+    .why {
+        h2 {
+            color: var(--fourthcolor);
+            margin-bottom: 3rem;
+            font: normal normal normal 28px/100px Nelphim;
+            letter-spacing: 2.27px;
+            color: #000000;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 70px;
+                letter-spacing: 5.6px;
+                line-height: 100px;
+                margin-bottom: 6rem;
+            }
+
+            &:before,
+            &:after {
+                content: "";
+                height: 1px;
+                background-color: #d8d7d7;
+                width: 34px;
+                position: absolute;
+
+                @include media-breakpoint-up(md) {
+                    width: 30%;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    width: 15%;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    width: 18%;
+                }
+            }
+
+            &:before {
+                left: 0;
+                bottom: 50%;
+            }
+
+            &:after {
+                right: 0;
+                bottom: 50%;
+            }
+        }
+
+        p {
+            color: #000;
+            font-size: 8px;
+            line-height: 10px;
+            font-weight: 400;
+            letter-spacing: 0.14px;
+            font-family: Lato;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 24px;
+                line-height: 37px;
+                letter-spacing: 0.43px;
+            }
+        }
+    }
+
+    .standards {
+        @include media-breakpoint-up(lg) {
+            background-color: var(--tierd-color);
+        }
+
+        .left {
+            img {}
+        }
+
+        .right {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+
+            @include media-breakpoint-up(lg) {
+                width: 50%;
+            }
+
+            &::before {
+                content: "";
+                background-image: url("/images/olive-oil.png");
+                background-repeat: no-repeat;
+                background-position: right;
+                opacity: 0.5;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                z-index: -1;
+
+                @include media-breakpoint-up(lg) {
+                    background-image: none;
+                }
+            }
+
+            h2 {
+                color: #000;
+                font-size: 13px;
+                line-height: 18px;
+                font-weight: 300;
+                letter-spacing: 0;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 41px;
+                    line-height: 59px;
+                    color: #fff;
+                    //width: 40%;
+                }
+            }
+
+            p {
+                color: #000;
+                font-size: 8px;
+                line-height: 8px;
+                font-weight: 300;
+                letter-spacing: 0;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 19px;
+                    line-height: 23px;
+                    color: #fff;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .proprieties {
+        img.products {
+            object-fit: contain;
+        }
+
+        h2.top {
+            color: var(--tierd-color);
+            font: normal normal normal 14px/16px Nelphim;
+            letter-spacing: 1.4px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 43px;
+                line-height: 59px;
+            }
+        }
+
+        .bottom {
+            //&:after {
+            //    content: "";
+            //    left: 50%;
+            //    height: 1px;
+            //    width: 93%;
+            //    background-color: #ccc;
+            //    transform: translateX(-50%);
+            //    position: absolute;
+            //    bottom: 0;
+            //}
+            border: 1px solid #ccc;
+
+            .left {}
+
+            .right {
+                img {
+                    object-fit: cover;
+
+                    @include media-breakpoint-up(lg) {
+                        width: 100%;
+                        height: 421px;
+                    }
+                }
+
+                @include media-breakpoint-up(lg) {
+                    //border-bottom: 0;
+                }
+            }
+
+            h2 {
+                font-size: 13px;
+                line-height: 59px;
+                font-weight: 400;
+                letter-spacing: 0;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 42px;
+                    line-height: 59px;
+                }
+            }
+
+            p {
+                font-size: 8px;
+                line-height: 11px;
+                font-weight: 300;
+                letter-spacing: 0;
+
+                @include media-breakpoint-up(lg) {
+                    line-height: 27px;
+                    font-size: 18px;
+                    font-family: 'Lato';
+                }
+            }
+        }
+    }
+}

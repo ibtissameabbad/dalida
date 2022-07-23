@@ -1,0 +1,273 @@
+.gammes {
+    .wrapper {
+        h1 {
+            color: var(--fourthcolor);
+            margin-bottom: 3rem;
+            font: normal normal normal 28px/100px Nelphim;
+            letter-spacing: 2.27px;
+            color: #000000;
+            @include media-breakpoint-up(lg) {
+                font-size: 70px;
+                letter-spacing: 5.6px;
+                line-height: 100px;
+                margin-bottom: 6rem;
+            }
+            &:before,
+            &:after {
+                content: "";
+                height: 1px;
+                background-color: #d8d7d7;
+                width: 47px;
+                position: absolute;
+                @include media-breakpoint-up(md) {
+                    width: 30%;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: 20%;
+                }
+                @include media-breakpoint-up(xl) {
+                    width: 25%;
+                }
+            }
+            &:before {
+                left: 0;
+                bottom: 50%;
+            }
+            &:after {
+                right: 0;
+                bottom: 50%;
+            }
+        }
+        >p {
+            font: normal normal 300 19px/15px Lato;
+            letter-spacing: 0px;
+            color: #000000;
+            padding-bottom: 74px;
+        }
+    }
+    .all-gammes {
+        > :nth-child(odd) {
+            .left {
+                @include media-breakpoint-up(lg) {
+                    order: 2;
+                }
+                h4 {
+                    right: 68% !important;
+                }
+            }
+            .products-rotate-text {
+                @include media-breakpoint-up(lg) {
+                    order: 1;
+                }
+            }
+        }
+        > :nth-child(even) {
+            .left {
+                @include media-breakpoint-up(lg) {
+                    order: 1;
+                }
+            }
+            .products-rotate-text {
+                @include media-breakpoint-up(lg) {
+                    order: 2;
+                }
+            }
+        }
+        >div {
+            .image {
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        > :nth-child(1) {
+            .image {
+                background-image: url("/images/gammes/oriental-touch-image.png");
+            }
+            .products {
+                background-image: url("/images/gammes/oriental-touch-image-light.png") !important;
+            }
+        }
+        > :nth-child(2) {
+            .image {
+                background-image: url("/images/gammes/soin-femme-image.png");
+            }
+            .products {
+                background-image: url("/images/gammes/soin-femme-image-light.png") !important;
+            }
+        }
+        > :nth-child(3) {
+            .image {
+                background-image: url("/images/gammes/total-lifting-image.png");
+            }
+            .products {
+                background-image: url("/images/gammes/total-lifting-image-light.png") !important;
+            }
+        }
+        > :nth-child(4) {
+            .image {
+                background-image: url("/images/gammes/honey-lips-image.png");
+            }
+            .products {
+                background-image: url("/images/gammes/honey-lips-image-light.png") !important;
+            }
+        }
+    }
+    .gamme {
+        h1 {
+            font: normal normal normal 20px/16px Lato;
+            color: var(--tierd-color)
+        }
+        .image-products {
+            .left {
+                //img {
+                //    object-fit: cover;
+                //    @include media-breakpoint-up(lg) {
+                //        height: 971px;
+                //    }
+                //}
+                .image {
+                    object-fit: cover;
+                    height: 100%;
+                    @include media-breakpoint-up(lg) {
+                        //height: 959px;
+                    }
+                }
+                h4 {
+                    text-align: center;
+                    font: normal normal normal 25px/31px Nelphim;
+                    letter-spacing: 1.25px;
+                    color: #000;
+                    right: 0;
+                    width: calc(100% - 26px);
+                    margin: auto;
+                    z-index: 1;
+                    @include media-breakpoint-up(lg) {
+                        font-size: 53px;
+                        line-height: 66px;
+                        letter-spacing: 2.65px;
+                        width: 30%;
+                        right: -29%;
+                        top: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                    }
+                }
+            }
+            .products-rotate-text {
+                h4.rotate-text {
+                    //transform: rotate(-90deg);
+                    top: 50%;
+                    left: 20px;
+                    font: normal normal normal 25px/31px Nelphim;
+                    letter-spacing: 2px;
+                    z-index: 1;
+                    &.rotate {
+                        transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+                    }
+                }
+                .products {
+                    background-image: url("/images/gamme-mask-1.png");
+                    // opacity: 0.6;
+                    background-position: center;
+                    background-size: cover;
+                    @include media-breakpoint-up(lg) {
+                        background: none !important;
+                        opacity: 1;
+                    }
+                    > :nth-child(1) {
+                        // border-right: 1px solid #a19e9e;
+                        &::after {
+                            content: "";
+                            height: 0px;
+                            width: 100%;
+                            position: absolute;
+                            left: 0;
+                            //transfrom: translateX(-50%);
+                            bottom: 0;
+                            background: #a19e9e;
+                            z-index: 1;
+                        }
+                    }
+                    > :nth-child(4) {
+                        // border-left: 1px solid #a19e9e;
+                        &::after {
+                            content: "";
+                            height: 0px;
+                            width: 100%;
+                            position: absolute;
+                            right: 0;
+                            //transfrom: translateX(-50%);
+                            top: 0;
+                            background: #a19e9e;
+                            z-index: 1;
+                        }
+                    }
+                    .product {
+                        position: relative;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .img-product {
+                            object-fit: contain;
+                            object-position: bottom;
+                            height: 128px;
+                            width: 100px;
+                            @include media-breakpoint-up(lg) {
+                                width: 169px;
+                                height: 277px;
+                            }
+                        }
+                        >h4 {
+                            //font: normal normal medium 6px/8px Lato;
+                            font-size: 11px;
+                            line-height: 9px;
+                            letter-spacing: 0.45px;
+                            font-weight: bold;
+                            @include media-breakpoint-up(lg) {
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 15px;
+                            }
+                        }
+                        .price {
+                            font-weight: bold;
+                            font-size: 10px;
+                            line-height: 14px;
+                            letter-spacing: 0.23px;
+                            @include media-breakpoint-up(lg) {
+                                font-size: 17px;
+                                line-height: 25px;
+                                letter-spacing: 0.42px;
+                            }
+                            .new {
+                                color: var(--tierd-color)
+                            }
+                            .correct {
+                                color: var(--fourthColor);
+                            }
+                        }
+                        >div {
+                            img {}
+                        }
+                        .star-percentage {
+                            font: normal normal 300 9px/11px Roboto;
+                            letter-spacing: 0;
+                            color: var(--fourthColor)
+                        }
+                        a.link {
+                            font-style: italic;
+                            font-size: 8px;
+                            letter-spacing: 0.38px;
+                            background-color: var(--tierd-color);
+                            @include media-breakpoint-up(lg) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

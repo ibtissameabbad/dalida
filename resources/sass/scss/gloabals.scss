@@ -1,0 +1,595 @@
+.bg-slider {
+    background-image: url('/storage/images/img3.png');
+    background-size: cover;
+}
+
+.purple {
+    background: #7000ff;
+}
+
+.w_50 {
+    width: 10px;
+    height: 10px;
+}
+
+.w-medium {
+    width: 90px;
+}
+
+.dropleft .dropdown-toggle::before {
+    content: none;
+}
+
+.w-10 {
+    width: 40px;
+    height: 40px;
+}
+
+.bg-grey {
+    background-color: #eee;
+}
+
+.h-450 {
+    height: 450px !important;
+}
+
+.w-h-25 {
+    width: 25%;
+    height: 25%;
+}
+
+.font-rem {
+    font-size: 1.27rem;
+}
+
+.font-rem-sm {
+    font-size: 0.9rem;
+}
+
+.p-6 {
+    padding: 4.3rem;
+}
+
+.bg-blue {
+    background: linear-gradient(0deg, #fff 16.95%, #286dc2 72.64%, #002c62 121.39%);
+}
+
+.level-marker {
+    width: 80%;
+    list-style: none;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 0 0 35px;
+    padding: 0;
+    position: relative;
+}
+
+.level-marker li {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.marker {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    border: 3px solid #d3d3d3;
+    margin-bottom: 5px;
+    box-sizing: content-box;
+}
+
+.level-marker li.blue .marker {
+    border: 8px solid #286dc1;
+}
+
+.level-marker::after {
+    content: "";
+    height: 4px;
+    width: 90%;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    background: #d3d3d3;
+    z-index: 0;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 36px;
+    z-index: 51;
+    right: 36px;
+}
+
+.color-purple {
+    color: #7000ff;
+}
+
+.rounded-xl {
+    border-radius: 15px;
+}
+
+.rounded-2xl {
+    border-radius: 30px;
+}
+
+.rounded-top-xl {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.rounded-top-2xl {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.m-top {
+    margin-top: -15px;
+}
+
+.gap {
+    margin-bottom: 20px;
+}
+
+.sm-font {
+    font-size: 0.6rem;
+}
+
+.wdth {
+    width: 40px;
+}
+
+.btn_ {
+    width: 50px;
+}
+
+.ml-xl {
+    left: 65px;
+}
+
+.text-gray-500 {
+    color: rgba(107, 114, 128, 1);
+}
+
+.text-gray-500:hover {
+    color: rgba(131, 24, 67, 1);
+}
+
+.text-gray {
+    color: #4a4a4a;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -.35px;
+}
+
+.separator {
+    border-bottom: 1px solid #f5f5f5;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.progress {
+    height: 0.3rem;
+}
+
+.progress_ {
+    width: 160px;
+    height: 160px !important;
+    float: left;
+    line-height: 150px;
+    background: none;
+    box-shadow: none;
+    position: relative
+}
+
+.progress_:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.progress_>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+
+.progress_ .progress-left {
+    left: 0
+}
+
+.progress_ .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0
+}
+
+.progress_ .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left
+}
+
+.progress_ .progress-right {
+    right: 0
+}
+
+.progress_ .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards
+}
+
+.progress_ .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 16px;
+    color: #000;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 5%
+}
+
+.progress_.blue .progress-bar {
+    border-color: #04aef1be;
+}
+
+.progress_.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s
+}
+
+.progress_.yellow .progress-bar {
+    border-color: #fdba04
+}
+
+.progress_.yellow .progress-right .progress-bar {
+    animation: loading-3 1.8s linear forwards
+}
+
+.progress_.yellow .progress-left .progress-bar {
+    animation: none
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg)
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg)
+    }
+}
+
+.image {
+    width: 40px;
+    height: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.small {
+    font-size: small;
+}
+
+.mx-width {
+    max-width: 700px;
+}
+
+.h-70 {
+    height: 70px !important;
+}
+
+.h-50 {
+    height: 50px !important;
+}
+
+.w-h-33 {
+    width: 33px;
+    height: 33px;
+}
+
+.w-h-25 {
+    width: 25px;
+    height: 25px;
+}
+
+.w-120 {
+    width: 120px;
+    height: 120px !important;
+    float: left;
+    line-height: 150px;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    margin: 15px;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #ff6262;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .camp>.card {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    .infos {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .progressBar {
+        order: -1;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .wish {
+        display: flex;
+        flex-direction: column !important;
+        justify-self: start;
+    }
+    .frm {
+        width: 100%;
+    }
+    .btns {
+        align-items: flex-end !important;
+    }
+    .winners {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .sociale {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap !important;
+        justify-content: flex-start !important;
+        padding: 0;
+    }
+    .store {
+        justify-content: flex-start !important;
+    }
+    .quick-links {
+        margin-bottom: 20px;
+    }
+    .customer-services {
+        margin-bottom: 20px;
+    }
+    .bottom-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        margin-bottom: 15px;
+    }
+    .accept {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start !important;
+    }
+    .modal {
+        width: 95% !important;
+    }
+    .progress_ {
+        width: 120px !important;
+        height: 120px !important;
+        float: left;
+        line-height: 150px;
+        background: none;
+        box-shadow: none;
+        position: relative;
+        margin: 15px;
+        order: -1;
+    }
+    .progress_ .progress-value {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background: transparent;
+        font-size: 16px;
+        color: #000;
+        line-height: 25px;
+        text-align: center;
+        position: absolute;
+        top: 8%;
+        left: 5%
+    }
+    .first {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .m-5 {
+        margin: 0.25rem !important;
+    }
+    .second {
+        order: -1;
+        display: flex;
+        flex-direction: row !important;
+        margin: 0.5rem !important;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end !important;
+        left: 5px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+    .btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end !important;
+        left: 5px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .btns {
+        left: 20px;
+    }
+}
+
+.image-preview {
+    height: 300px;
+    cursor: zoom-in;
+}
+
+.magnifier-container {
+    display: inline-block;
+    position: relative;
+}
+
+.magnifier {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.magnifier__img {
+    width: 1000px;
+    transform-origin: 150px 150px;
+}
+
+.loupe {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 12px black;
+    background: rgba(0, 0, 0, 0.25);
+    cursor: crosshair;
+    overflow: hidden;
+}
+
+.loupe img {
+    position: absolute;
+    right: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 3s;
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+{
+    opacity: 0;
+}
+
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.magnify {
+    position: relative;
+    cursor: none
+}
+
+.magnify-large {
+    position: absolute;
+    display: none;
+    width: 175px;
+    height: 175px;
+    -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%
+}
+.changeLang {
+    border: 0;
+    //background: #fff;
+    border-radius: 4px;
+}

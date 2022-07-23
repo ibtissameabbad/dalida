@@ -1,0 +1,122 @@
+    .best-sellers {
+        h1.title {
+            color: var(--fourthcolor);
+            margin-bottom: 3rem;
+            font: normal normal normal 23px/33px Nelphim;
+            letter-spacing: 0.85px;
+            color: #000000;
+            @include media-breakpoint-up(lg) {
+                font-size: 70px;
+                letter-spacing: 5.6px;
+                line-height: 100px;
+                margin-bottom: 6rem;
+            }
+            &:before,
+            &:after {
+                content: "";
+                height: 1px;
+                background-color: #d8d7d7;
+                width: 22px;
+                position: absolute;
+                @include media-breakpoint-up(md) {
+                    width: 10%;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: 17%;
+                }
+                @include media-breakpoint-up(xl) {
+                    width: 20%;
+                }
+            }
+            &:before {
+                left: 0;
+                bottom: 50%;
+            }
+            &:after {
+                right: 0;
+                bottom: 50%;
+            }
+        }
+        p {
+            font: normal normal normal 9px/45px Nelphim;
+            letter-spacing: 0.63px;
+            margin-bottom: 40px;
+            color: var(--tierd-color);
+            @include media-breakpoint-up(sm) {
+                font-size: 20px;
+                line-height: 105px;
+            }
+        }
+        .best-seller {
+            .category {
+                span {
+                    font: normal normal normal 9px/0px Nelphim;
+                    letter-spacing: 0.63px;
+                    color: var(--tierd-color);
+                    @include media-breakpoint-up(lg) {
+                        font-size: 21px;
+                        line-height: 25px;
+                        letter-spacing: 1.47px;
+                    }
+                }
+                img.product-img {
+                    height: 283px;
+                    object-fit: cover;
+                    @include media-breakpoint-up(lg) {
+                        height: 538px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .image {
+                width: 100%;
+                height: 488px;
+                background-image: url("/images/best-seller-1-1.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                //background-size: 100% 488px;
+                background-size: contain;
+                transition: background-image 0.8s ease-in-out;
+                @media(min-width: 576px) {
+                    //width: 300px;
+                    height: 400px;
+                    background-size: 100% 400px;
+                }
+                @media(min-width: 1200px) {
+                    //width: 340px;
+                    height: 683px;
+                    background-size: 100% 683px;
+                } //
+                @media(min-width: 1400px) {
+                    //width: 391px;
+                    height: 673px;
+                    background-size: 100% 673px;
+                }
+            }
+            a {
+                transform: translateX(-50%) translateY(-50%);
+                left: 50%;
+                bottom: 50%;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    @include media-breakpoint-up(lg) {
+                        width: 56px;
+                        height: 56px;
+                    }
+                }
+            }
+            //@media(min-width: 576px) {
+            //    height: 400px;
+            //    background-size: 100% 400px;
+            //}
+            //
+            //@media(min-width: 1200px) {
+            //    height: 683px;
+            //    background-size: 100% 683px;
+            //}
+            //@media(min-width: 1400px) {
+            //    background-size: 100% 673px;
+            //}
+        }
+    }

@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#RewriteRule ^(.*)$ public/$1 [L]
+#RewriteRule ^(.*)$ comingsoon.html [L]
+#RewriteRule !\.(?:jpe?g|gif|bmp|png|tiff|css|js)$ comingsoon.html [L,NC]
+RewriteRule ^(.*)$ public/$1
+
+</IfModule>
+

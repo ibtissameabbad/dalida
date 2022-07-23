@@ -1,0 +1,17 @@
+.breadcrumb-nav {
+    .breadcrumb {
+        .breadcrumb-item {
+            a {
+                font-weight: 300;
+                font-size: 15px;
+                letter-spacing: 0.32px;
+                color: var(--fourthColor);
+                text-decoration: none;
+                @include media-breakpoint-up(lg) {
+                    font-size: 15px;
+                    letter-spacing: 0.32px;
+                }
+            }
+        }
+    }
+}

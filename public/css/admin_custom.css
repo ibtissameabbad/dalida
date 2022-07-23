@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+    /*font-family: "Lato", Sans serif !important;*/
+}
+html {
+    height: 100vh !important;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", Sans serif !important;
+}
+
+body {
+    font-family: "Lato", Sans serif !important;
+}
+
+.dashboard {
+}
+
+.dashboard h3.title {
+    font-size: 1.25rem;
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    /* padding: 10px; */
+}
+
+table {
+    font-size: 14px;
+}
+.table {
+    background-color: #fff;
+    border-radius: 4px;
+}
+.table thead th {
+    font-weight: 400;
+    color: #000;
+}
+
+.table td,
+.table th {
+    border-top: 0;
+    vertical-align: middle;
+}
+
+a.new {
+    background: rgba(0, 128, 96, 1);
+}
+
+a.new:hover {
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+.table tbody td.name > a {
+}
+
+.table tbody td.name a {
+    gap: 4px;
+}
+
+.table td.name a span:hover {
+    text-decoration: underline;
+}
+
+
+.table td.name a i svg {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+.back {
+    gap: 4px;
+}
+
+.back a {
+    padding: 3px 8px;
+}
+
+.card {
+}
+
+.card .card-body {
+}
+
+.card .card-body .card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 400;
+}
+
+.upload {
+}
+
+.upload input {
+    height: 70px;
+    padding: 2rem;
+    border: 0
+}
+
+.upload input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.upload input::before {
+    content: 'Ajouter une image';
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.upload input:hover::before {
+    border-color: black;
+}
+
+.upload input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.buttons {
+    gap: 5px;
+    border-top: 1px solid #ccc;
+}
+
+/*Globals*/
+[class*=sidebar-dark] .brand-link {
+    border-bottom: 0;
+}
+
+[class*=sidebar-dark-] {
+    background-color: #fff;
+}
+
+.elevation-4 {
+    box-shadow: 0 7px 7px rgba(0, 0, 0, .25), 0 5px 1px rgba(0, 0, 0, .22) !important;
+}
+
+.nav-sidebar .nav-item > .nav-link {
+    color: rgb(32, 34, 35);
+    font-size: 14px;
+}
+
+.nav-sidebar .nav-item > .nav-link > i {
+    margin-right: 5px;
+}
+
+.nav-sidebar .nav-item > .nav-link:hover {
+    color: rgb(32, 34, 35);
+}
+
+[class*=sidebar-dark-] .nav-sidebar > .nav-item.menu-open > .nav-link, [class*=sidebar-dark-] .nav-sidebar > .nav-item:hover > .nav-link, [class*=sidebar-dark-] .nav-sidebar > .nav-item > .nav-link:focus {
+    color: rgb(32, 34, 35);
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active, .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: #f6f3f3;
+    color: rgb(32, 34, 35);
+}
+
+[class*=sidebar-dark-] .nav-sidebar > .nav-item > .nav-link.active {
+    box-shadow: none;
+}
+
+a.name-edit {
+    color: #000;
+    /*text-decoration: underline;*/
+    background-color: transparent;
+}
+a.name-edit:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.text-decoration-line-through {
+    text-decoration: line-through;
+}
+.image-edit-store {
+    width: 100px;
+    height: 100px;
+    object-fit: contain
+}

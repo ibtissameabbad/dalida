@@ -1,0 +1,83 @@
+.why-dalida {
+    h1.why {
+        color: var(--fourthcolor);
+        margin-bottom: 3rem;
+        font: normal normal normal 28px/100px Nelphim;
+        letter-spacing: 2.27px;
+        color: #000000;
+        @include media-breakpoint-up(lg) {
+            font-size: 70px;
+            letter-spacing: 5.6px;
+            line-height: 100px;
+            margin-bottom: 6rem;
+        }
+        &:before,
+        &:after {
+            content: "";
+            height: 1px;
+            background-color: #d8d7d7;
+            width: 47px;
+            position: absolute;
+            @include media-breakpoint-up(md) {
+                width: 30%;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 20%;
+            }
+            @include media-breakpoint-up(xl) {
+                width: 25%;
+            }
+        }
+        &:before {
+            left: 0;
+            bottom: 50%;
+        }
+        &:after {
+            right: 0;
+            bottom: 50%;
+        }
+    }
+    div.content {
+        img.snail-1 {
+            object-fit: cover;
+            width: 84px;
+            height: 98px;
+            mix-blend-mode: normal;
+            @include media-breakpoint-up(lg) {
+                width: 278px;
+                height: 319px;
+            }
+        }
+        img.snail-2 {
+            width: 79px;
+            height: 79px;
+            @include media-breakpoint-up(lg) {
+                width: 250px;
+                height: 250px;
+            }
+        }
+        p {
+            color: var(--tierd-color);
+            font: normal normal normal 10px/11px Nelphim;
+            letter-spacing: 0.1px;
+            @include media-breakpoint-up(lg) {
+                font-size: 21px;
+                line-height: 33px;
+                letter-spacing: 0.34px;
+                text-align: left;
+            }
+        }
+        .now-more {
+            font: normal normal bold 7px/19px Lato;
+            letter-spacing: 0.12px;
+            color: #000;
+            @include media-breakpoint-up(lg) {
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.24px;
+                display: block;
+                text-align: left;
+            }
+        }
+    }
+}

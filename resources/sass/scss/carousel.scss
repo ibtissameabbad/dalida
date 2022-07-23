@@ -1,0 +1,198 @@
+/* Start  Carousal */
+
+.carousel {
+    height: 100%;
+    @media(min-width: 500px) {
+        height: 700px;
+    }
+
+    .carousel-indicators {
+        bottom: -33px;
+        margin-bottom: 0;
+        @include media-breakpoint-up(md) {
+            bottom: 0;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background-color: #000;
+            @include media-breakpoint-up(md) {
+                // background-color: #FFF;
+            }
+        }
+    }
+
+    .carousel-inner > .carousel-item {
+        > img {
+            height: 400px;
+            object-fit: cover;
+            object-position: right bottom;
+            @media(min-width: 500px) {
+                height: 700px;
+                object-position: bottom right;
+            }
+        }
+
+        .description {
+            // bottom: 100px;
+            // left: 50px;
+            width: 100%;
+            position: relative;
+            margin-top: 10px;
+            letter-spacing: 0;
+            z-index: 99;
+            @media(min-width: 500px) {
+                bottom: 111px;
+                left: 175px;
+                width: 35%;
+                position: absolute;
+                margin-top: 0;
+            }
+            @include media-breakpoint-up(lg) {
+                bottom: 43%;
+                left: 149px;
+                width: 47%;
+            }
+
+            h1 {
+                font: normal normal normal 21px/23px Nelphim;
+                letter-spacing: 0.45px;
+                @include media-breakpoint-up(lg) {
+                    font-size: 38px;
+                    line-height: 50px;
+                }
+                @include media-breakpoint-up(xxl) {
+                    width: 100%;
+                    font-size: 53px;
+                    line-height: 54px;
+                }
+            }
+
+            p {
+                font: normal normal normal 10px/18px Nelphim;
+                color: var(--tierd-color);
+                background-color: #000;
+                box-shadow: 0px 6px 6px #00000033;
+                border-radius: 20px;
+                @include media-breakpoint-up(lg) {
+                    font-size: 21px;
+                    line-height: 20px;
+                    letter-spacing: 0.34px;
+                    width: 70%;
+                }
+            }
+
+            img.snail {
+                width: 293px;
+                height: 219px;
+                object-fit: contain;
+            }
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                gap: 3px;
+                background: var(--tierd-color);
+                box-shadow: 0px 5px 11px #CB954B78;
+                border-radius: 30px;
+
+                span {
+                    font: normal normal 300 10px/9px Lato;
+                    @include media-breakpoint-up(md) {
+                        font: normal normal 300 16px/20px Lato;
+                        letter-spacing: 1.35px;
+                    }
+                }
+
+                color: #fff;
+            }
+
+            img.buy-now {
+                width: 20px;
+                height: 20px;
+                @include media-breakpoint-up(md) {
+                    width: 27px;
+                    height: 27px;
+                }
+            }
+        }
+    }
+}
+
+.slide-lg {
+    > .description {
+        bottom: 100px;
+        left: 50px;
+        width: 80%;
+        @media(min-width: 500px) {
+            bottom: 111px;
+            left: 175px;
+            width: 35%;
+        }
+        @include media-breakpoint-up(lg) {
+            bottom: 43%;
+            left: 149px;
+            width: 47%;
+        }
+        letter-spacing: 0;
+
+        h1 {
+            font: normal normal normal 21px/23px Nelphim;
+            letter-spacing: 0.45px;
+            @include media-breakpoint-up(lg) {
+                font-size: 38px;
+                line-height: 50px;
+            }
+            @include media-breakpoint-up(xxl) {
+                width: 100%;
+                font-size: 53px;
+                line-height: 54px;
+            }
+        }
+
+        p {
+            font: normal normal normal 10px/18px Nelphim;
+            color: var(--tierd-color);
+            background-color: #000;
+            box-shadow: 0px 6px 6px #00000033;
+            border-radius: 20px;
+            @include media-breakpoint-up(lg) {
+                font-size: 21px;
+                line-height: 20px;
+                letter-spacing: 0.34px;
+                width: 70%;
+            }
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            background: var(--tierd-color);
+            box-shadow: 0px 5px 11px #CB954B78;
+            border-radius: 30px;
+
+            span {
+                font: normal normal 300 10px/9px Lato;
+                @include media-breakpoint-up(md) {
+                    font: normal normal 300 18px/20px Lato;
+                    letter-spacing: 1.35px;
+                }
+            }
+
+            color: #fff;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            @include media-breakpoint-up(md) {
+                width: 27px;
+                height: 27px;
+            }
+        }
+    }
+}
+
+
+/* End  Carousal */
